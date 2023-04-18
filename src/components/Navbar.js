@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
@@ -23,18 +23,18 @@ export default function Navbar(props) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto  mb-lg-0">
-            <li className="nav-item ">
-              <a className="nav-link  active" aria-current="page" href="/">
+          <ul className="navbar-nav me-auto  mb-dg-0">
+            <li className="nav-item  " >
+              <a className="nav-link  active" aria-current="page" href="/" >
                 Home
               </a>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <a className="nav-link" href="/about">
                 {props.aboutText}
                    About
               </a>
-            </li> */}
+            </li>
           </ul>
           {/* <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -56,7 +56,7 @@ export default function Navbar(props) {
             <label
               className="form-check-label"
               htmlFor="flexSwitchCheckDefault ">
-              Enable darkMode
+              DarkMode
             </label>
           </div>
         </div>
@@ -71,6 +71,6 @@ Navbar.propTypes = {
 };
 
 Navbar.defaultProps = {
-  title: "Put title Here",
-  aboutText: "Write Here",
+  title: "Put title ",
+  aboutText: "",
 };

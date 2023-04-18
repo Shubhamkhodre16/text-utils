@@ -29,7 +29,7 @@ export default function Textform(props) {
   return (
     <>
       <div
-        className="container"
+        className="container my-4"
         style={{ color: props.mode === "dark" ? "white" : "black" }}
       >
         <h2>Enter Text to Analyse</h2>
@@ -38,7 +38,7 @@ export default function Textform(props) {
             className="form-control"
             onChange={handleOnChange}
             style={{
-              backgroundColor: props.mode === "dark" ? "grey" : "white",
+              backgroundColor: props.mode === "dark" ? "grey": "white",
               color: props.mode === "dark" ? "white" : "black",
             }}
             value={text}
@@ -62,7 +62,7 @@ export default function Textform(props) {
           className="btn btn-primary mx-2"
           onClick={() => handleOnClick()}
         >
-          Remove Extra spaces
+          Remove Extra Spaces
         </button>
       </div>
       <div

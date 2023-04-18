@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 // import { useState } from "react";
 import "./App.css";
-// import About from "./components/About";
+import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Textform from "./components/Textform";
 import React, { useState } from "react";
@@ -27,7 +27,7 @@ function App() {
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
-      document.body.style.backgroundColor = "#101539";
+      document.body.style.backgroundColor = "#3e3f3d";
       showAlert("Dark Mode is Enabled", "success");
       document.title = "TextUitles - Dark Mode";
     } else {
@@ -37,6 +37,7 @@ function App() {
       document.title = "TextUitles - Light  Mode";
     }
   };
+ 
   return (
     <>
       {/* <Navbar title="TextUitles" aboutText="About Textutiles"/> */}
@@ -50,8 +51,8 @@ function App() {
         <div className="container my-3">
           {/* // For Applyuing Router */}
           <Switch>
-            <Route path="/about">{/* <About /> */}</Route>
-            <Route path="/">
+            <Route path="/about"><About /></Route>
+            <Route path="/">  
               <Textform
                 heading="Enter the text to Analysize"
                 showAlert={showAlert}
